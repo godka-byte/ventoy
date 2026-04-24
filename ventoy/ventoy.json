@@ -1,0 +1,10 @@
+{
+    "auto_install":[
+        {
+            "parent": "/ISO/Windows",
+            "template":[
+                "/Templates/autounattend.xml"
+            ]
+        }
+    ]
+}
