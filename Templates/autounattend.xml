@@ -610,7 +610,7 @@ if( $out -match '\s([a-f0-9-]{36})\s' ) {
 		</File>
 		<File path="C:\Windows\Setup\Scripts\unattend-02.ps1">
 foreach( $drive in [System.IO.DriveInfo]::GetDrives() ) {
-    if( $found = Join-Path -Path $drive.RootDirectory -ChildPath 'Ninite*Installer.exe' -Resolve -ErrorAction 'SilentlyContinue' ) {
+    if( $found = Join-Path -Path $drive.RootDirectory -ChildPath 'scripts\Ninite*Installer.exe' -Resolve -ErrorAction 'SilentlyContinue' ) {
         Start-Process -FilePath $found -Wait;
         return;
     }
